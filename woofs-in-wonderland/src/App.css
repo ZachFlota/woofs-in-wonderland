@@ -1,0 +1,144 @@
+.App {
+  text-align: center;
+  overflow: hidden;
+}
+
+.body {
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+[class*="col-"] {
+  float: left;
+  padding: 25px;
+  
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  .navbar {
+    background: linear-gradient(135deg, #f6f4dc 88%, #ffca7a 88%);
+  }
+  .profilePic {
+    margin-left: 10%;
+    margin-top: 2.5%;
+    z-index: 2;
+    width: 75%;
+    border-style: solid;
+    border-color: #f6f4dc;
+    border-radius: 50%;
+    border-width: 10px;
+  }
+
+  .title {
+    
+    color: #f6f4dc;
+    font-size: 12vw;
+    font-family: Brush Script MT;
+    margin:  5% auto;
+    text-align: right;
+    line-height: 85%;
+  }
+
+  .tagLine {
+    color: #f6f4dc;
+    letter-spacing: 10px;
+    font-size: 2vw;
+    font-weight: bold;
+    margin-left: 5%;
+  }
+
+  .line {
+    height: 5px;
+    width: 115%;
+    background: #f6f4dc;
+    opacity: 1;
+  }
+
+  #banner {
+    background-image: url("./Assets/hedge.png");
+    height:69vh;
+    
+  }
+
+  #footer {
+    background: linear-gradient(135deg, #f6f4dc 48%,#ffca7a 48%);
+    height: 25.2vh;
+    
+  }
+  
+  
+}
+
+@media only screen and (max-width: 600px) {
+  /* For mobile: */
+  [Class*="col-"] {
+    width: 100%;
+  }
+  .navbar {
+    background: #f1efea;
+  }
+  #banner {
+    background-image: url("./Assets/hedge.png")
+    
+  }
+  .profilePic {
+    width: 100%;
+    border-style: solid;
+    border-color: white;
+    border-radius: 50%;
+    border-width: 5px;
+  }
+  .title {
+    color: white;
+    font-size: 13vw;
+    font-family: Brush Script MT;
+  }
+  .tagLine {
+    color: white;
+    letter-spacing: 10px;
+    font-size: 5vw;
+    font-weight: bold;
+  }
+
+  .line {
+    height: 5px;
+    width: 100%;
+    background: white;
+    opacity: 1;
+  }
+  #footer {
+    background: #f1efea 45%;
+    
+    
+  }
+
+
+}
+
+
+
+
