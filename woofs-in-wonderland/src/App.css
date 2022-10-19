@@ -39,14 +39,19 @@
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
 
+  /*Navbar*/
   .navbar {
-    background: linear-gradient(135deg, #f6f4dc 88%, #ffca7a 88%);
+    background: linear-gradient(135deg, #f6f4dc 88%, #000000 88%);
+    position: fixed;
+    width: 100%;
+    border-bottom: solid 5px black;
   }
+  /*Home*/
   .profilePic {
     margin-left: 10%;
-    margin-top: 2.5%;
+    margin-top: 10%;
     z-index: 2;
-    width: 75%;
+    width: 80%;
     border-style: solid;
     border-color: #f6f4dc;
     border-radius: 50%;
@@ -58,7 +63,7 @@
     color: #f6f4dc;
     font-size: 12vw;
     font-family: Brush Script MT;
-    margin:  5% auto;
+    margin:  13% auto;
     text-align: right;
     line-height: 85%;
   }
@@ -68,6 +73,7 @@
     letter-spacing: 10px;
     font-size: 2vw;
     font-weight: bold;
+    
     margin-left: 5%;
   }
 
@@ -76,20 +82,137 @@
     width: 115%;
     background: #f6f4dc;
     opacity: 1;
+    margin-top: -7%;
   }
 
   #banner {
     background-image: url("./Assets/hedge.png");
-    height:69vh;
+    height:80vh;
     
   }
 
   #footer {
-    background: linear-gradient(135deg, #f6f4dc 48%,#ffca7a 48%);
-    height: 25.2vh;
+    background: linear-gradient(135deg, #f6f4dc 50%,#000000 50%);
+    padding: 0%;
+    border-top: solid 5px black;
+    border-bottom: solid 5px black;
     
   }
+
+  #blurb {
+    margin: 1% center;
+    padding: 2%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+  }
+  #blurb2 {
+    margin: 1% center;
+    color: white;
+    padding: 2%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+  }
+
+  .icon {
+    color: #b50627;
+  }
+
+  /*About*/
+
+  #aboutRow {
+    background-image: url("./Assets/checkerBoardOW.png");
+    background-size: cover;
+    background-color: #f6f4dc;
+    height: 100vh;
+  }
+  #about1 {
+    height: 100vh;   
+  }
+  #about2 {
+    height: 100vh;
+  }
+  #tag {
+    background-color:#000000;
+    border: solid 5px #f6f4dc;
+    padding: 20%;
+    height: 90%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: left;
+    font-size:2.5vw;
+    margin-top: 7%;
+  }
+  #who {
+    background-color: #f6f4dc;
+    border: solid 5px black;
+    padding: 15%;
+    height: 90%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    margin-top: 7%;    
+    font-size: 2vw;
+  }
+  /*Gallery*/
+  .gallery {
+    background-color: #000000;
+  }
+  #gallery1 {
+    padding: 0;
+  }
+  #gallery2 {
+    padding: 0;
+  }
+  #gallery3 {
+    padding: 0;
+  }  
+  .dogTrio {
+    width:100%;
+    border: solid 5px #000000;
+  }
+  .finn {
+    width: 100%;
+    border: solid 5px #000000;
+  }
+  .yorkie {
+    width: 100%;
+    border: solid 5px #000000;
+  }
+  .crab {
+    width: 100%;
+    border: solid 5px #000000;
+  }
+  .hpyorkie {
+    width: 100%;
+    border: solid 5px #000000;
+    margin: 2% auto;
+  }
+  .cowboy {
+    width: 100%;
+    margin: -11% auto;
+    border: solid 5px #000000;
+  }
+  .lmdoodle {
+    width: 50%;
+    border: solid 5px #000000;
+  }
+  .hppoodle {
+    width: 50%;
+    border: solid 5px #000000;
+  }
   
+  /*Contact*/
+  .contact {
+    height: 100vh;
+    background: linear-gradient(135deg, #f6f4dc 61.5%,#000000 61.5%);
+  }
+  #contact1 {
+    text-align: left;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10% auto;
+    color: black;
+    font-size: 7vw;
+  }
+
   
 }
 
@@ -98,9 +221,14 @@
   [Class*="col-"] {
     width: 100%;
   }
+  /*NavBar*/
   .navbar {
-    background: #f1efea;
+    background-color: #f6f4dc;
+    position: fixed;
+    width: 100%;
+    border-bottom: solid 5px black;
   }
+  /*Home*/
   #banner {
     background-image: url("./Assets/hedge.png")
     
@@ -108,17 +236,17 @@
   .profilePic {
     width: 100%;
     border-style: solid;
-    border-color: white;
+    border-color: #f6f4dc;
     border-radius: 50%;
     border-width: 5px;
   }
   .title {
-    color: white;
+    color: #f6f4dc;
     font-size: 13vw;
     font-family: Brush Script MT;
   }
   .tagLine {
-    color: white;
+    color: #f6f4dc;
     letter-spacing: 10px;
     font-size: 5vw;
     font-weight: bold;
@@ -127,15 +255,87 @@
   .line {
     height: 5px;
     width: 100%;
-    background: white;
+    background: #f6f4dc;
     opacity: 1;
   }
   #footer {
-    background: #f1efea 45%;
-    
+    background: #f6f4dc 45%;
+    border-top: solid 5px black;
+    border-bottom: solid 5px black;
+  }
+  .icon {
+    color: #b50627;
+  }
+  /*About*/
+  #aboutRow {
+    background-image: url("./Assets/checkerBoardOW.png");
+    background-size: cover;
+    background-color: #f6f4dc;
     
   }
 
+  #tag {
+    background-color:#000000;
+    border: solid 5px #f6f4dc;
+    padding: 10%;
+    height: 90%;
+    color: white;
+    font-size: 2em;
+    margin-top: 7%;
+  }
+  #who {
+    background-color: #f6f4dc;
+    border: solid 5px black;
+    padding: 10%;
+    height: 90%;
+    margin-top: 7%; 
+  }
+
+  /*Gallery*/
+  .gallery {
+    background-color: #000000;
+  }
+  #gallery1 {
+    padding: 0;
+  }
+  #gallery2 {
+    padding: 0;
+  }
+  #gallery3 {
+    padding: 0;
+  }  
+  .dogTrio {
+    width:100%;
+    border: solid 5px #000000;
+  }
+  .finn {
+    width: 100%;
+    border: solid 5px #000000;
+  }
+  .yorkie {
+    width: 100%;
+    border: solid 5px #000000;
+  }
+  .crab {
+    width: 100%;
+    border: solid 5px #000000;
+  }
+  .hpyorkie {
+    width: 100%;
+    border: solid 5px #000000;
+  }
+  .cowboy {
+    width: 100%;
+    border: solid 5px #000000;
+  }
+  .lmdoodle {
+    width: 100%;
+    border: solid 5px #000000;
+  }
+  .hppoodle {
+    width: 100%;
+    border: solid 5px #000000;
+  }
 
 }
 
